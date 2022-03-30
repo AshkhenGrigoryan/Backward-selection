@@ -1,9 +1,9 @@
 # Backward-selection    
-all_features = list(data.columns)
-current_selected_features = all_features[:]
-removed_features = []
-number_of_best_features = 5
-rss_scores = {}
+    all_features = list(data.columns)
+    current_selected_features = all_features[:]
+     removed_features = []
+     number_of_best_features = 5
+     rss_scores = {}
 
 def get_test_rss(features, data_train, y_train, data_test, y_test):
     lin_reg = LinearRegression()
